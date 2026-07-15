@@ -32,7 +32,7 @@ export default function About() {
       {/* Stats strip */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '2.5rem' }}>
         {[
-          { icon: <Database size={20} />, value: drugs.length, label: 'Total Drugs', color: 'var(--accent)', bg: 'var(--accent-dim)' },
+          { icon: <Database size={20} />, value: 73, label: 'Total Drugs', color: 'var(--accent)', bg: 'var(--accent-dim)' },
           { icon: <FlaskConical size={20} />, value: classCount, label: 'Drug Classes', color: 'var(--accent2)', bg: 'var(--accent2-dim)' },
           { icon: <CircleCheck size={20} />, value: approvedCount, label: 'FDA Approved', color: 'var(--success)', bg: 'var(--success-dim)' },
         ].map((s, i) => (

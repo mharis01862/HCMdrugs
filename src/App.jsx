@@ -3,10 +3,9 @@ import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-ro
 import { Database as DbIcon, Info, Heart } from 'lucide-react';
 import Database from './pages/Database';
 import About from './pages/About';
-import drugsData from '../data/drugs.json';
 import logo from './assets/HCMdrugs_logo.png';
 
-const totalDrugs = (drugsData?.records || drugsData)?.length || 0;
+const totalDrugs = 73;
 
 function Navigation() {
   const location = useLocation();
