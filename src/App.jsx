@@ -4,6 +4,7 @@ import { Database as DbIcon, Info, Heart } from 'lucide-react';
 import Database from './pages/Database';
 import About from './pages/About';
 import drugsData from '../data/drugs.json';
+import logo from './assets/HCMdrugs_logo.png';
 
 const totalDrugs = (drugsData?.records || drugsData)?.length || 0;
 
@@ -23,7 +24,7 @@ function Navigation() {
       style={{ boxShadow: scrolled ? '0 8px 32px rgba(0,0,0,0.4)' : 'none', transition: 'box-shadow 0.3s' }}
     >
       <Link to="/" className="nav-logo" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-        <img src="/HCMdrugs_logo.png" alt="HCMdrugs" />
+        <img src={logo} alt="HCMdrugs" />
       </Link>
 
       <nav className="nav-links">
