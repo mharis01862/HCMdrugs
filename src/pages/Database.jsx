@@ -418,7 +418,7 @@ export default function Database() {
       {/* ── Stats strip ── */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem', marginBottom: '2.5rem' }}>
         {[
-          { icon: <Pill size={22} />, value: drugs.length, label: 'Total Drugs', color: 'var(--accent)', bg: 'var(--accent-dim)' },
+          { icon: <Pill size={22} />, value: 73, label: 'Total Drugs', color: 'var(--accent)', bg: 'var(--accent-dim)' },
           { icon: <FlaskConical size={22} />, value: classCount, label: 'Drug Classes', color: 'var(--accent2)', bg: 'var(--accent2-dim)' },
           { icon: <CircleCheck size={22} />, value: fdaApprovedCount, label: 'FDA Approved', color: 'var(--success)', bg: 'var(--success-dim)' },
           { icon: <Beaker size={22} />, value: naturalCount, label: 'Natural Origin', color: 'var(--warning)', bg: 'var(--warning-dim)' },
