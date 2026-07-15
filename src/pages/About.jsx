@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen, User, ArrowUpRight, Heart, Database, FlaskConical, CircleCheck } from 'lucide-react';
 import drugsData from '../../data/drugs.json';
+import logo from '../assets/HCMdrugs_logo.png';
 
 const drugs = drugsData?.records ?? drugsData ?? [];
 const approvedCount = drugs.filter(d => {
@@ -16,7 +17,7 @@ export default function About() {
       {/* Hero */}
       <div style={{ textAlign: 'center', marginBottom: '3.5rem' }} className="animate-slideup">
         <img
-          src="/HCMdrugs_logo.png"
+          src={logo}
           alt="HCMdrugs Logo"
           style={{ height: '120px', marginBottom: '2rem', filter: 'drop-shadow(0 8px 24px rgba(0,201,167,0.25))' }}
         />
