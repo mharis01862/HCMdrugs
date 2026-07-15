@@ -84,7 +84,7 @@ export default function About() {
             collaborations, please visit the developer's portfolio.
           </p>
           <a
-            href="https://mharis01862.github.io/"
+            href="https://harisbio.github.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline"
