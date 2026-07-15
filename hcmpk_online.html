@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this page contains inforamtion about drugs" />
+    <link rel="icon" href="https://hcmpk.online/frontassets/img/img.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCMdrugs</title>
+    <link rel="stylesheet" href="https://hcmpk.online/frontassets/main.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/e917c73063.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        #specialnav {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(6, 6, 32);
+            overflow: hidden;
+            font-family: "Arial", sans-serif;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        #cross {
+            display: none;
+            width: 40px;
+            color: white;
+
+        }
+
+        .img_set {
+            width: 600px;
+        }
+
+        #specialnav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #specialnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        @media screen and (max-width: 869px) {
+            .same_display {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                z-index: 40;
+                position: relative;
+            }
+
+            #burger {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 10px;
+            }
+
+            #direction_adjust {
+                flex-direction: column-reverse;
+            }
+
+            #center {
+                text-decoration: none;
+                background-color: #060620;
+                color: white;
+                padding: 10px;
+            }
+
+            #cross {
+                display: flex;
+                width: 40px;
+                color: white;
+                position: relative;
+                top: -40px;
+                left: -70px;
+
+            }
+
+            #specialnav {
+                display: none;
+                justify-content: center;
+                column-gap: 10px;
+                align-items: center;
+                flex-direction: column;
+                position: fixed;
+                top: 0px;
+                right: 0;
+                height: 100vh;
+                width: 200px;
+                background-color: rgb(6, 6, 32);
+                z-index: 999;
+                /* Adjust z-index as needed */
+            }
+
+            .data_change {
+                display: none;
+            }
+
+            #specialnav.open {
+                display: flex;
+
+            }
+        }
+
+        @media screen and (max-width:700px) {
+
+            .hypertrophiccardiomyopathy {
+                font-size: 14px;
+                padding: 2px 0px;
+            }
+
+        }
+
+        @media screen and (max-width:433px) {
+
+            .hypertrophiccardiomyopathy {
+                font-size: 9px;
+                padding: 2px 0px;
+            }
+
+        }
+
+        @media screen and (max-width:350px) {
+
+            .hypertrophiccardiomyopathy {
+                font-size: 6px;
+                padding: 2px 0px;
+            }
+
+        }
+
+        @media screen and (max-width: 605px) {
+            .img_set {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <br />
+        <nav class="navbar fixed-top navbar-expand-custom" id="main-nav">
+            <a class="navbar-brand" href="https://hcmpk.online" target="_blank">
+                <img alt="HCM logo" src="https://hcmpk.online/frontassets/img/logo.png" height="60" />
+            </a>
+        </nav>
+
+        <div>
+            <h1 class="hypertrophiccardiomyopathy">
+                HCM-Hypertrophic Cardiomyopathy
+            </h1>
+            <nav id="burger">
+
+                <div id='res_logo'>
+                    <a href="https://hcmpk.online" id="center"><b>HCMdrugs</b></a>
+                </div>
+                <div class="bugrer_res">
+                    <svg style="width: 40px;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M5 12H20" stroke="#060620" stroke-width="2" stroke-linecap="round">
+                            </path>
+                            <path d="M5 17H20" stroke="#060620" stroke-width="2" stroke-linecap="round">
+                            </path>
+                            <path d="M5 7H20" stroke="#060620" stroke-width="2" stroke-linecap="round">
+
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </nav>
+            <nav id="specialnav">
+                <svg id="cross" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0">
+                    </g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433
+          15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794
+           17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084
+           12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794
+           7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" fill="#fff">
+                        </path>
+                    </g>
+                </svg>
+                <div class="same_display">
+                  <a href="https://hcmpk.online" id="homee">Home</a>
+                  <a href="https://hcmpk.online/blogs" id="blogg">Blog</a>
+                  <a href="https://hcmpk.online/about" id="aboutt">About</a>
+                  <a href="https://hcmpk.online/drugs" id="servicess">A-Z Drugs</a>
+                </div>
+
+                <div class="same_display">
+                    <a href="https://hcmpk.online" id="center" class="data_change"><b>HCMdrugs</b></a>
+                </div>
+                <div class="same_display" id="direction_adjust">
+                                            <a href="https://hcmpk.online/login" id="loginButton">Login</a>
+                                      <a href="https://hcmpk.online/register" id="signupButton">Sign Up</a>
+                  <a href="https://hcmpk.online/tell-us" id="telluss">Tell Us</a>
+                  <a href="https://hcmpk.online/mharis_site/" id="authors">Author</a>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="background-container">
+            <br class="clear"><br class="clear">
+            <h2 id="first-heading">
+                EMPOWERING CHANGE WITH <br />ADVANCED HCM-FOCUSED <br />DRUG THERAPIES
+            </h2>
+
+            <div class="search-container">
+                <a class="search-button" href="https://hcmpk.online/drugs" style="text-decoration:none;">
+                    Search here
+                </a>
+            </div>
+            <br>
+
+        </div>
+    </header>
+
+    <br /><br />
+    <hr />
+
+    <main>
+        <div class="syrup-container"><br /><br /><br /><br /><br /></div>
+        <br />
+        <div class="container">
+
+            <!-- <hr /> -->
+            <p class="left-content">Overview</p>
+
+            <div class="vertical-line"></div>
+
+            <ul class="adjust_list">
+                <li>Search for Drugs, Brands and Sources</li>
+                <li>Learn how they tackle with Hypertrophic Cardiomyopathy</li>
+                <li>Learn about the molecular targets of the drugs</li>
+            </ul>
+
+        </div>
+
+        <!-- <hr /> -->
+
+        <div class="imgtext-container">
+            <div class="img-leftcontainer">
+                <figure>
+                    <img class="img_set" src="https://hcmpk.online/frontassets/img/1.png" alt="HCM" loading="lazy" />
+                </figure>
+            </div>
+
+            <div class="text1-rightcontent">
+                <h2 class="text_adjust">
+                    Discover worldwide HCM medications: <br />Effects, Targets, Brands,
+                    Insights.
+                </h2>
+
+                <p class="text2-rightcontent">
+                    "EXPLORE A WORLD OF HCM SOLUTIONS THROUGH OUR COMPREHENSIVE
+                    PLATFORM.UNVEIL METICULOUSLY CURATED GLOBALMEDICATIONS ADDRESSING
+                    HCM COMPLEXITIES.DISCOVER DRUG EFFECTS, TARGETS, AND BRAND
+                    VARIATIONS..EMPOWER INFORMED DESICIONS FOR HEART HEALTH. JOIN US TO
+                    DECODE WORLDWIDE HCM MEDICATIONS, NAVIGATING TREATMENT OPTIONS WITH
+                    CLARITY."
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <div id="portfolio">
+            <div class="portfolio-container">
+                <h2 class="sub-title">Search For</h2>
+                <div class="work-list">
+                                      
+                  
+                    <div class="work" style="height:500px;">
+                        <img src="https://hcmpk.online/storage/cards/V7f6AeSvqkmTiaclFthcEdcIRAHqyzbXDX73IQqq.png" />
+                        <div class="layer">
+                            <h3>Drugs</h3>
+                            <p>Search for any drug</p>
+                            <a href="https://hcmpk.online/drugs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                                        
+                  
+                    <div class="work" style="height:500px;">
+                        <img src="https://hcmpk.online/storage/cards/1HArJxGyrachgbHF738krMxRjneSqC7gMvqqHxA8.jpg" />
+                        <div class="layer">
+                            <h3>Molecular Actions &amp; Brand Names</h3>
+                            <p>Search for the molecular actions and thousands of brand names available for each drug</p>
+                            <a href="https://hcmpk.online/drugs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                                        
+                  
+                    <div class="work" style="height:500px;">
+                        <img src="https://hcmpk.online/storage/cards/ZwIA3EG1aKwf0JaR62qQFZbj01eoBOp0X5Jf1TPI.png" />
+                        <div class="layer">
+                            <h3>Publications</h3>
+                            <p>Search for the publications related to each drug</p>
+                            <a href="https://hcmpk.online/drugs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                                    </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!--<div class="searchfor-container">
+        <h2 class="searchfor-heading">Search For</h2>
+        <div class="imagebuttonsection-container">
+          <div class="div-container">
+            <img src="img/drug.jpg" height="230px">
+            <div class="div-container-drugs">Drugs</div>
+            <div class="layer">
+              <p>Explore the drugs for HCM treatment</p>
+              <a href="drugs.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square" style="color:#4caf50;"></i
+                  ></a>
+            </div>
+          </div>
+
+          <div class="div-container">
+            <div class="div-container-effects"><i class="fa-solid fa-capsules"></i>
+              <h2>Effects</h2></div>
+            <div class="layer">
+            <p>Explore the effects of different drugs on HCM</p>
+              <a href="drugs.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square" style="color:#4caf50;"></i
+                  ></i
+              ></a>
+            </div>
+            
+          </div>
+
+          <div class="div-container">
+            <div class="div-container-references">References</div>
+            <div class="layer">
+              <p>Explore the different references avaialble for the drugs</p>
+              <a href="drugs.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square" style="color:#4caf50;"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+        <hr />
+
+        <div class="context-container">
+            <div class="bigcontext-container">
+                <h2>
+                    WE ARE YOUR
+                    PARTNER TO <br class="clear" />HYPERTROPHIC <br class="clear" />CARDIOMYOPATHY
+                    <br class="clear" />JOURNEY
+                </h2>
+                <div>
+                    <p class="leftcontext-container">
+                        Welcome to our revolutionary platform dedicated to Hypertrophic
+                        Cardiomyopathy (HCM) management. Dive into a vast database with
+                        detailed insights on global HCM medications, including effects,
+                        targets, brand names, and natural sources. Your all-encompassing
+                        resource for comprehensive HCM information.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <br class="clear" /><br class="clear" /><br class="clear" /><br class="clear" /><br
+                    class="clear" /><br class="clear" /><br class="clear" /><br class="clear" /><br
+                    class="clear" /><br class="clear" /><br class="clear" /><br class="clear" /><br
+                    class="clear" /><br class="clear" /><br class="clear" /><br class="clear" />
+
+                <div class="rightcontext-container">
+                    <p>
+                        Explore a wealth of reference papers contextualizing HCM drugs,
+                        providing insights into their nature and potential. Navigate our
+                        platform to empower your decisions with comprehensive knowledge,
+                        bridging the gap between medical information and empowered
+                        wellness for holistic HCM understanding and care. Join us on this
+                        journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="contact-section">
+          <h2 class="contact-heading">Contact Us</h2>
+          <p>Feel free to reach out to us for any inquiries or feedback.</p>
+          <br />
+          <form class="contact-form" action="https://hcmpk.online/add_contact_form" method="POST">
+            <input type="hidden" name="_token" value="P8Jym5mccXLIawwSC8UZTk8Sr8dvhZjcmaUl4Ob3" autocomplete="off">            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </main>
+
+    <hr />
+
+    <section id="ending-section">
+      <div class="icon-container">
+          <h2>Stay Connected</h2>
+          <p>Follow us on social media for the latest updates:</p>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com" rel="noopener noreferrer">
+              <img src="https://hcmpk.online/frontassets/img/facebook.png" alt="Facebook" height="50" />
+            </a>
+            <a href="https://www.instagram.com" rel="noopener noreferrer">
+              <img src="https://hcmpk.online/frontassets/img/instagram.png" alt="Instagram" height="50" />
+            </a>
+            <a href="https://www.linkedin.com" rel="noopener noreferrer">
+              <img src="https://hcmpk.online/frontassets/img/linkedin.png" alt="LinkedIn" height="50" />
+            </a>
+        </div>
+      </div>
+  </section>
+
+    <hr />
+
+    <footer>
+        <p>&copy; 2024 HCMdrugs. All rights reserved.</p>
+        <p>
+            <a href="#" class="backtop">Back to Top</a>
+        </p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const burger = document.getElementById('burger');
+        const specialnav = document.getElementById('specialnav');
+        const cross = document.getElementById('cross')
+
+
+        burger.addEventListener('click', function() {
+            specialnav.classList.toggle('open');
+            // cross.classList.toggle('open')
+        });
+        cross.addEventListener('click', function() {
+            specialnav.classList.toggle('open');
+            // cross.classList.toggle('open')
+        });
+    });
+</script>
+
+</html>

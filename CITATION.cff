@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this database in your research, please cite it as below."
+authors:
+  - family-names: "Haris"
+    given-names: "Muhammad"
+  - family-names: "Rahman"
+    given-names: "Shahroz"
+  - family-names: "Qamar"
+    given-names: "Muhammad Tahir ul"
+  - family-names: "Azeem"
+    given-names: "Farrukh"
+title: "HCMdrugs Database"
+version: 1.0.0
+doi: "10.1142/S2737416525500954"
+date-released: 2026-01-01
+url: "https://github.com/your-username/hcmdrugs"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Haris"
+      given-names: "Muhammad"
+    - family-names: "Rahman"
+      given-names: "Shahroz"
+    - family-names: "Qamar"
+      given-names: "Muhammad Tahir ul"
+    - family-names: "Azeem"
+      given-names: "Farrukh"
+  title: "HCMdrugs: A Web-Based Database Cataloging the Drugs Available for the Treatment of Hypertrophic Cardiomyopathy"
+  journal: "Journal of Computational Biophysics and Chemistry"
+  year: 2026
+  volume: 25
+  issue: 9
+  start: 1341
+  end: 1350
+  doi: "10.1142/S2737416525500954"
